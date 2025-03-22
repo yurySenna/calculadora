@@ -1,0 +1,18 @@
+function calcular() {
+            var alc = parseFloat(document.getElementById('alc').value);
+            var gas = parseFloat(document.getElementById('gas').value);
+            var res = document.getElementById('res');
+
+            if (isNaN(alc) || isNaN(gas) || alc <= 0 || gas <= 0) {
+                res.innerText = "Digite valores válidos!";
+                return;
+            }
+
+            var proporcao = alc / gas;
+
+            if (proporcao <= 0.7) {
+                res.innerText = "O álcool é mais vantajoso, Boa Viagem!";
+            } else {
+                res.innerText = "A gasolina é mais vantajosa, Boa Viagem!";
+            }
+        }

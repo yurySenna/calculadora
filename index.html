@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Combustivel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="img/bomb.webp" alt="Bomba de combustível">
+        <h1>Vai Viajar?Economiza Mais</h1>
+
+        <label>Álcool (preço por litro)</label>
+        <input type="number" step="0.01" class="form-control" placeholder="Preço por litro" id="alc">
+
+        <label>Gasolina (preço por litro)</label>
+        <input type="number" step="0.01" class="form-control" placeholder="Preço por litro" id="gas">
+
+        <button id="botao" type="button" onclick="calcular()">Calcular</button>
+
+        <div id="res">Resultado</div>
+        <footer>
+            <a href="https://www.instagram.com/sennayury/" target="_blank">
+                <p>© 2025 Senna Dev - Todos os direitos reservados.</p>
+            </a>
+        </footer>
+    </div>
+
+    <script src="script"></script>
+    
+</body>
+</html>
